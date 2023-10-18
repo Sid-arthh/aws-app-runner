@@ -1,18 +1,17 @@
-from flask import Flask
-import os
-import time
+const express = require('express');
+const app = express();
+const port = 3000;
 
-PORT = 8080
-name = os.environ.get('NAME', "world")  # Use get() method with a default value
-MESSAGE = "Hello, " + name + "!"
+app.get('/', (req, res) => {
+        res.send('Hello DevOps team!');
+        console.log(res);
+});
 
-app = Flask(__name__)
+app.get('/kss', (req, res) => {
+    res.send('This is a demo for Apprunner KSS');
+    console.log(res);
+});
 
-@app.route("/")
-def root():
-    print("Handling web request. Returning message.")
-    time.sleep(0.5)
-    return MESSAGE  # No need to encode the message
-
-if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=PORT)
+app.listen(port, () => {
+    console.log(`This app is listing at http://localhost:${port}`);
+});
