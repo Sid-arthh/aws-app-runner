@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "express": "
-  }
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC"
 }
