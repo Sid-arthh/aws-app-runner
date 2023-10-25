@@ -8,7 +8,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/kss', (req, res) => {
-    res.send('This is a demo for Apprunner KSS');
+    res.send('This is a demo of Apprunner for KM');
     console.log(res);
 });
 
